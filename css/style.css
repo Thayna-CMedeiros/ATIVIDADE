@@ -1,0 +1,86 @@
+/* o estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão da página */
+    padding: 20px; /* Adiciona espaçamento interno de 20 pixels ao redor do conteúdo do corpo */
+    margin: 0; /* Remove as margens padrão do navegador */
+    display: flex; /* Usa o Flexbox para o layout */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do corpo */
+    align-items: center; /* Centraliza verticalmente o conteúdo do corpo */
+    min-height: 100vh; /* altura mínima para o corpo como 100% da altura da viewport */
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura e altura dos elementos */
+    background-color: #f0f0f0; /* Define uma cor de fundo clara para a página */
+}
+
+/* estilo do container que agrupa os formulários */
+.container {
+    width: 100%; 
+    max-width: 600px; /* Define a largura máxima do container para 600 pixels */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    background-color: #fff; /* Define a cor de fundo do container como branco */
+    padding: 20px; /* Adiciona um espaçamento interno de 20 pixels ao redor do conteúdo do container */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao redor do container */
+    text-align: center; /* Centraliza o texto dentro do container */
+}
+
+/*  estilo dos títulos <h2> */
+h2 {
+    color: #000; /* Define a cor do texto dos títulos como preto */
+    margin-bottom: 15px; /* Adiciona uma margem inferior de 15 pixels */
+}
+
+/*  o estilo dos formulários */
+form {
+    display: flex; /* Usa o Flexbox para o layout dos formulários */
+    flex-direction: column; /* Organiza os itens do formulário em uma coluna */
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels ao formulário */
+    padding: 15px; /* Adiciona um espaçamento interno de 15 pixels ao redor do conteúdo do formulário */
+    border-radius: 8px; /* Adiciona bordas arredondadas com raio de 8 pixels */
+    border: none; /* Remove a borda padrão do formulário */
+    background-color: #f9f9f9; /* Define uma cor de fundo suave para o formulário */
+}
+
+/*  estilo dos campos de entrada de texto e email */
+input[type="text"], input[type="email"] {
+    width: 100%; 
+    padding: 8px; /* Adiciona um espaçamento interno de 8 pixels ao redor do texto dentro do campo */
+    border-radius: 4px; /* Adiciona bordas arredondadas */
+    border: 1px solid #ccc; /* Define uma borda */
+    margin-bottom: 15px; /* Adiciona uma margem*/
+    font-size: 14px; /* Define o tamanho da fonte dentro dos campos*/
+}
+
+/* estilo dos botões */
+.btn {
+    background-color: #000; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão*/
+    border: 2px solid #000; /* Define a borda */
+    border-radius: 4px; /* Adiciona bordas arredondadas c*/
+    padding: 10px; /* Adiciona um espaçamento interno ao redor do texto dentro do botão */
+    font-size: 14px; /* Define o tamanho da fonte dentro do botão  */
+    cursor: pointer; /* uma mãozinha ao passar sobre o botão */
+    transition: background-color 0.3s, color 0.3s, border 0.3s; /* Adiciona uma transição suave  para mudanças de cor de fundo, cor do texto e borda */
+    width: 100%;
+    text-transform: uppercase; /* Transforma o texto do botão para maiúsculas */
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+/*  estilo do botão quando o usuário passa o mouse sobre ele */
+.btn:hover {
+    background-color: #fff; /* Muda a cor de fundo do botão ao passar o mouse sobre ele */
+    color: #000; /* Muda a cor do texto do botão para preto ao passar o mouse sobre ele */
+    border: 2px solid #000; /* Mantém a borda preta de 2 pixels ao passar o mouse sobre o botão */
+}
+
+/* Define o estilo para mensagens ou alertas */
+.message {
+    margin-top: 20px; /* Adiciona uma margem superior  */
+    padding: 10px; /* Adiciona um espaçamento interno ao redor do texto */
+    text-align: center; 
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    width: 100%; 
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura e altura da mensagem */
+    background-color: #e9ecef; /* Define uma cor de fundopara a mensagem */
+    border: 1px solid #ced4da; /* Define uma borda ao redor da mensagem */
+    color: #212529; /*cor do texto da mensagem  */
+}
